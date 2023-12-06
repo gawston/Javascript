@@ -6,4 +6,3 @@ function test(t) {
 
 let x;
 console.log(test(x));
-
