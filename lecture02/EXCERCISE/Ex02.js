@@ -1,11 +1,21 @@
 function equation(str) {
-    let result = str.split('');
-    console.log(result);
-    for(let i = 0; i < str.length; i++) {
-
+    let arr = str.split("");
+    let result = Number(arr[0]);
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] === "+") {
+            result += Number(arr[i + 1]);
+        } else if (arr[i] === "-") {
+            result -= Number(arr[i + 1]);
+        } else if (arr[i] === "*") {
+            result *= Number(arr[i + 1]);
+        } else if (arr[i] === "/") {
+            result /= Number(arr[i + 1]);
+        }
     }
+    return result;
 }
 
-// equation("1+1");
-// equation("7*4-2");
-// equation("1+1+1+1+1");
+console.log(equation("1+1"));
+console.log(equation("7*4-2"));
+console.log(equation("1+1+1+1+1"));
+console.log(equation("9/3+2-4"));
