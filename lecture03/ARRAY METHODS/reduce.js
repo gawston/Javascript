@@ -4,4 +4,4 @@ const sum = arrayofNumbers.reduce((accumulator, currentValue) =>{
     return accumulator + currentValue;
 });
 
-console.log(sum); //10
+console.log(sum); // 10

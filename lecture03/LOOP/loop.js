@@ -23,3 +23,10 @@ for (let name of names){
 }
 
 //do while loop **sniplet
+console.log('-- do while --');
+index = 0; // reset index = 0 เพราะ loop ก่อนหน้าทำให้ index ไม่ใช่ 0
+// let i = 0; // หรือสร้างตัวแปรใหม่ก็ได้
+do {
+    console.log(names[index]);
+    index++;
+} while (index < names.length);
