@@ -13,8 +13,8 @@ class Dog {
     }
 }
 
-const myDOg = new Dog("Buster");
-myDOg.introduce();
+const myDog = new Dog("Buster");
+myDog.introduce();
 
 // Calling the static method
 Dog.bark();

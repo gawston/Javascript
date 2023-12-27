@@ -12,8 +12,12 @@ function cube(x) {
     return x*x*x;
 }
 
-const add =(a,b) => a+b;
+function wh(w,h) {
+    return w*h;
+}
+
+const add =(a,b,c,d) => a+b+c+d;
 
 const status = true;
 
-module.exports = {person, sayHello,cube,add,status}
+module.exports = {person, sayHello,cube,wh,add,status}

@@ -26,7 +26,7 @@ try {
     logError(ex);
 }
 
-// Try..CAtch..Finally
+// Try..Catch..Finally
 console.log("\n********Try..Catch..Finally********\n");
 
 try {
@@ -35,7 +35,7 @@ try {
     console.log("Got an error");
     logError(ex);
 } finally {
-    console.log("code that a;ways will run");
+    console.log("code that always will run");
 }
 
 function hello() {

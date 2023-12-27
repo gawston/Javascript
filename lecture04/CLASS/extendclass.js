@@ -16,7 +16,7 @@ class Song extends Media {
 
 const mySong = new Song({
     artist: "Queen",
-    name: "Bohenmian Phapsody",
+    name: "Bohenmian Rhapsody",
     pulishDate: 1975,
 });
 
