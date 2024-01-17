@@ -3,7 +3,7 @@ function isValidIP(str) {
     let isIP = 0;
     if(newstr.length == 4) {
         for(let i = 0; i < newstr.length; i++) {
-            if(newstr[i].length < 4 && parseInt(newstr[i]) <= 255) {
+            if(newstr[0].split('')[0] != "0" && newstr[i].length < 4 && parseInt(newstr[i]) <= 255) {
                 isIP++;
             }
         }
