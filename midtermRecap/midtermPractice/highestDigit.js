@@ -6,9 +6,9 @@ function highestDigit(num) {
             highest = parseInt(arrnum[i]);
         }
     }
-    console.log(highest);
+    return highest;
 }
 
-highestDigit(379);
-highestDigit(2);
-highestDigit(377401);
+console.log(highestDigit(379));
+console.log(highestDigit(2));
+console.log(highestDigit(377401));

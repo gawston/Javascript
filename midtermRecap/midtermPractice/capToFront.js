@@ -10,9 +10,11 @@ function capToFront(str) {
             newstr += str[i];
         }
     }
-    console.log(newstr);
+    return newstr;
+
+    // return str.split('').sort().toString().replaceAll(',', '');
 }
 
-capToFront("hApPy");
-capToFront("moveMENT");
-capToFront("shOrtCAKE");
+console.log(capToFront("hApPy"));
+console.log(capToFront("moveMENT"));
+console.log(capToFront("shOrtCAKE"));
