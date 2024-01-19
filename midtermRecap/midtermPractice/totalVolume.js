@@ -1,6 +1,6 @@
 function totalVolume(...arr) {
-    let sumArray = arr.map( n => n.reduce(( a , b ) => a * b ));
-    let sum = sumArray.reduce(( a , b ) => a + b );
+    let sumArray = arr.map( array => array.reduce((total, value) => total * value)); // คูณทุกตัวใน array
+    let sum = sumArray.reduce((total, value) => total + value); // เอาแต่ละ array มาบวกกัน
     return sum;
 }
 
