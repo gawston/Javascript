@@ -15,6 +15,6 @@ function capToFront(str) {
     // return str.split('').sort().toString().replaceAll(',', '');
 }
 
-console.log(capToFront("hApPy"));
-console.log(capToFront("moveMENT"));
-console.log(capToFront("shOrtCAKE"));
+console.log(capToFront("hApPy"));   // APhpy
+console.log(capToFront("moveMENT"));    // MENTmove
+console.log(capToFront("shOrtCAKE"));   // OCAKEshrt
