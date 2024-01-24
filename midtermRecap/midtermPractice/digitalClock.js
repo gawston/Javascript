@@ -1,4 +1,9 @@
 function digitalClock(sec) {
+    // ใช้ได้เหมือนกัน
+    // let hour = Math.floor(num / 60 / 60 % 24);
+    // let min = Math.floor((num / 60) % 60);
+    // let sec = num % 60;
+
     let hours = Math.floor((sec / 3600) % 24).toString();
     let minutes = Math.floor((sec % 3600) / 60).toString();
     let seconds = Math.floor(sec % 60).toString();

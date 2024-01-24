@@ -1,8 +1,8 @@
-function canMove(piece,fromSquare,toSquare) {
+function canMove(piece, fromSquare, toSquare) {
     // TEST : Before
-    console.log("\n");
-    console.log("Before : " + fromSquare.toLowerCase());
-    console.log("Before : " + toSquare.toLowerCase());
+    // console.log("\n");
+    // console.log("Before : " + fromSquare.toLowerCase());
+    // console.log("Before : " + toSquare.toLowerCase());
 
     const file = [];
     const rank = [];
@@ -12,16 +12,15 @@ function canMove(piece,fromSquare,toSquare) {
     let correct = null;
 
     if (fromSquare != toSquare) {
-        const square = [fromSquare,toSquare];
+        const square = [fromSquare, toSquare];
 
         for (let i = 0; i < square.length; i++) {
             file.push(square[i].charAt(0).toLowerCase());
             rank.push(parseInt(square[i].charAt(1)));
 
-            const locationChar = ['a','b','c','d','e','f','g','h'];
+            const locationChar = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
             bool.push(locationChar.includes(file[i]) && (rank[i] >= 1 && rank[i] <= 8));
         }
- 
         // TEST : After Split
         // console.log("\n< --------- step 1 --------- >");
         // console.log("After Spilt Char : " + file.join(' , '));
@@ -32,7 +31,6 @@ function canMove(piece,fromSquare,toSquare) {
         number = Math.abs(rank[0] - rank[1]);
         correct = bool[0] === true && bool[1] === true;
     }
-
     // TEST : After Check 
     // console.log("\n< --------- step 2 --------- >");
     // console.log("After Check Ascii : " + ascii);
@@ -58,7 +56,6 @@ function canMove(piece,fromSquare,toSquare) {
                 return false;
         }
     }
-
     return false;
 }
 
